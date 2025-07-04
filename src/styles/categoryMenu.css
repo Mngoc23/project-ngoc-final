@@ -1,0 +1,79 @@
+.category-menu {
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  width: 260px;
+  background-color: #fefefe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 2px 0 8px rgb(0 0 0 / 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.category-menu h3 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #222;
+  user-select: none;
+}
+
+.category-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.category-menu li {
+  cursor: pointer;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 17px;
+  color: #555;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  user-select: none;
+  margin-bottom: 6px;
+}
+
+.category-menu li.hovered:not(.active) {
+  background-color: #007bff;
+  color: white;
+  transform: translateX(4px);
+}
+
+.category-menu li.active {
+  font-weight: 700;
+  background-color: #004a99;
+  color: white;
+  box-shadow: 0 0 10px rgb(0 123 255 / 0.6);
+}
+
+.category-menu li:hover {
+  text-decoration: none;
+}
+
+/* responsive nếu muốn */
+@media (max-width: 768px) {
+  .category-menu {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 12px;
+  }
+
+  .category-menu ul {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .category-menu li {
+    flex-shrink: 0;
+    margin-right: 12px;
+    border-radius: 6px;
+    margin-bottom: 0;
+  }
+}
