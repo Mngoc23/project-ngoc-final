@@ -55,7 +55,6 @@
   text-decoration: none;
 }
 
-/* responsive nếu muốn */
 @media (max-width: 768px) {
   .category-menu {
     width: 100%;
