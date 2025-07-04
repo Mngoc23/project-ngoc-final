@@ -30,7 +30,7 @@ function CategoryPage() {
           setProducts([]);
           console.warn("API products không trả về mảng");
         }
-        setTotalProducts(20); // giả lập tổng sản phẩm do API chưa hỗ trợ phân trang thật
+        setTotalProducts(20);
       } catch (error) {
         console.error("Lỗi khi fetch sản phẩm:", error);
         setProducts([]);
